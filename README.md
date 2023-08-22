@@ -146,3 +146,15 @@ Processing raw metabolomics data obtained from mass spectrometry (MS) is a cruci
    - Before statistical analysis, data might be log-transformed, auto-scaled (mean-centered and divided by the standard deviation), or Pareto-scaled (mean-centered and divided by the square root of the standard deviation).
 
 Once these processing steps are completed, the data are ready for downstream statistical analysis, such as univariate or multivariate analysis, to identify significant metabolites or patterns related to the experimental conditions.
+
+
+
+<p>
+    <center>
+        <img src="assets/workflow.png" alt>
+        <em>Workflow for metabolomics data analysis </em> [1]
+    </center>
+</p>
+
+## References
+[1] Chen Y, Li EM, Xu LY. Guide to Metabolomics Analysis: A Bioinformatics Workflow. Metabolites. 2022 Apr 15;12(4):357. doi: 10.3390/metabo12040357. PMID: 35448542; PMCID: PMC9032224. 
