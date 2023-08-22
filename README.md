@@ -1,5 +1,5 @@
 # Metabolomics_Data_Analysis
-This repocovers my studies  and work about metabolomics data analysis
+This repo covers my studies  and work about metabolomics data analysis
 
 Metabolomics is the comprehensive study of the metabolome, which refers to the complete set of small-molecule metabolites (such as metabolic intermediates, hormones, and other signaling molecules) found within a biological sample. This field is a subset of systems biology and is analogous to genomics, transcriptomics, and proteomics, which study the genome, transcriptome, and proteome, respectively.
 
