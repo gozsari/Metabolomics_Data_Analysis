@@ -3,6 +3,60 @@ This repo covers my studies  and work about metabolomics data analysis
 
 Metabolomics is the comprehensive study of the metabolome, which refers to the complete set of small-molecule metabolites (such as metabolic intermediates, hormones, and other signaling molecules) found within a biological sample. This field is a subset of systems biology and is analogous to genomics, transcriptomics, and proteomics, which study the genome, transcriptome, and proteome, respectively.
 
+The terms "untargeted" and "targeted" in the context of metabolomics refer to different analytical approaches and objectives when studying metabolites. Untargeted metabolomics aims to capture as many metabolites as possible in a sample without a pre-defined list. The goal is often exploratory, aiming to discover new or unexpected metabolites or metabolic changes. In contrast, targeted metabolomics focuses on the accurate measurement of a specific set of known metabolites. The choice between these approaches depends on the research question, available resources, and the desired outcomes.
+
+### **Untargeted Metabolomics (also known as Global or Discovery Metabolomics)**:
+
+1. **Objective**: 
+   - To capture as many metabolites as possible in a sample without a pre-defined list.
+   - The goal is often exploratory, aiming to discover new or unexpected metabolites or metabolic changes.
+
+2. **Coverage**:
+   - Broad and non-specific. It tries to detect thousands of metabolites in a sample, regardless of their identity.
+
+3. **Data Complexity**:
+   - Generates large and complex datasets because of the wide range of metabolites detected.
+   - Requires extensive data processing, including noise filtering, peak identification, and alignment.
+
+4. **Quantification**:
+   - Typically provides relative quantification, comparing the levels of metabolites across different samples or conditions.
+
+5. **Applications**:
+   - Biomarker discovery, where unknown metabolites might be indicators of a disease or condition.
+   - Understanding global metabolic changes in response to stimuli or perturbations.
+
+6. **Challenges**:
+   - Metabolite identification can be challenging due to the vast number of detected features.
+   - Requires comprehensive metabolite databases and often additional validation steps.
+
+### **Targeted Metabolomics**:
+
+1. **Objective**:
+   - To specifically measure a predefined set of metabolites of interest.
+   - The goal is often hypothesis-driven, focusing on known metabolic pathways or specific classes of metabolites.
+
+2. **Coverage**:
+   - Narrow and specific. Only the metabolites of interest (often a few dozen to a few hundred) are targeted and quantified.
+
+3. **Data Complexity**:
+   - Generates simpler datasets since only specific metabolites are targeted.
+   - Data processing is more straightforward, focusing on the quantification of the predefined metabolites.
+
+4. **Quantification**:
+   - Provides absolute quantification, determining the exact concentration of each targeted metabolite in the sample.
+   - Often uses internal standards for each metabolite to achieve high accuracy and precision.
+
+5. **Applications**:
+   - Validating and confirming findings from untargeted studies.
+   - Monitoring specific metabolic pathways or processes.
+   - Clinical diagnostics, where specific metabolites need to be accurately measured.
+
+6. **Challenges**:
+   - The range of metabolites is limited to the predefined list, so unexpected or unknown metabolites are missed.
+   - Requires the development of specific analytical methods for each set of targeted metabolites.
+
+In summary, while untargeted metabolomics aims for a broad overview and discovery of metabolic changes, targeted metabolomics focuses on the accurate measurement of a specific set of known metabolites. The choice between these approaches depends on the research question, available resources, and the desired outcomes.
+
 ## A brief overview of metabolomics data
 
 1. **Types of Metabolites**: Metabolites can be broadly categorized into primary and secondary metabolites. Primary metabolites are directly involved in growth, development, and reproduction, while secondary metabolites are often involved in ecological interactions, such as defense against herbivores or pathogens.
