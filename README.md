@@ -148,13 +148,36 @@ Processing raw metabolomics data obtained from mass spectrometry (MS) is a cruci
 Once these processing steps are completed, the data are ready for downstream statistical analysis, such as univariate or multivariate analysis, to identify significant metabolites or patterns related to the experimental conditions.
 
 
-
 <p>
     <center>
         <img src="assets/workflow.png" alt>
         <em>Workflow for metabolomics data analysis </em> [1]
     </center>
 </p>
+
+
+## Workshops, Courses, and Tutorials
+- [Metabolomics Society Training](https://metabolomicssociety.org/training)
+- [Metabolomics Workbench Training](https://www.metabolomicsworkbench.org/training/index.php)
+- [Espol Metabolomics Workshop](https://github.com/shuzhao-li/espol-workshop)
+- [EBI-Online tutorial](https://www.ebi.ac.uk/training/online/courses/metabolomics-introduction/)
+
+## Softwares and Tools
+- [MZmine](http://mzmine.github.io/)
+- [MetaboAnalyst](https://www.metaboanalyst.ca/)
+- [MetaboAnalystR](https://www.metaboanalyst.ca/docs/RTutorial.xhtml)
+- [mtachms](https://github.com/matchms/matchms)
+- [spectrum_utils](https://github.com/bittremieux/spectrum_utils)
+- [mspypeline](https://github.com/siheming/mspypeline)
+- [PythoMS](https://github.com/larsyunker/PythoMS)
+- [pyOpenMS](https://github.com/biosustain/pyOpenMS_UmetaFlow)
+
+
+
+## Useful links
+- [Metabolomics Society](https://metabolomicssociety.org/)
+- [Metabolomics Workbench](https://www.metabolomicsworkbench.org/)
+
 
 ## References
 [1] Chen Y, Li EM, Xu LY. Guide to Metabolomics Analysis: A Bioinformatics Workflow. Metabolites. 2022 Apr 15;12(4):357. doi: 10.3390/metabo12040357. PMID: 35448542; PMCID: PMC9032224. 
