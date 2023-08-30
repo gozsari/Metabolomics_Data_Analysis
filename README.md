@@ -209,6 +209,47 @@ Once these processing steps are completed, the data are ready for downstream sta
     </center>
 </p>
 
+## Exploratory Data Analysis (EDA) for metabolomics data
+Exploratory Data Analysis (EDA) is a crucial step in metabolomics research, as it allows researchers to understand the structure, patterns, and potential outliers in their data before diving into more complex analyses. 
+
+**A general workflow for EDA on a metabolomics dataset:**
+
+1. **Data Import and Preliminary Inspection**:
+   - Load the dataset into an appropriate software or programming environment (e.g., R, Python, MATLAB).
+   - Check the dimensions of the dataset, missing values, and basic statistics (mean, median, standard deviation) for each metabolite.
+
+2. **Data Cleaning**:
+   - Handle missing values, which might involve imputation, removal of certain features (metabolites) with too many missing values, or removal of certain samples.
+   - Filter out metabolites with low variance or those that don't meet certain quality criteria.
+
+3. **Normalization and Scaling**:
+   - Normalize the data to account for variations in sample concentration or instrument sensitivity. Common methods include total **ion current (TIC) normalization** or **normalization to internal standards**.
+   - Scale the data to ensure that all metabolites have comparable influence in subsequent analyses. Common methods include autoscaling (mean-centering and dividing by the standard deviation) or Pareto scaling.
+
+4. **Visualization**:
+   - **Univariate Visualization**: Histograms, box plots, and violin plots for individual metabolites to understand their distribution and identify potential outliers.
+   - **Multivariate Visualization**: Principal Component Analysis (PCA) or t-distributed Stochastic Neighbor Embedding (t-SNE) to visualize the overall structure and clustering of samples. This can help in identifying patterns, trends, or outliers in the dataset.
+
+5. **Statistical Summary**:
+   - Calculate basic statistics for each metabolite, such as mean, median, range, and variance.
+   - Conduct correlation analyses to identify metabolites that are correlated, which can provide insights into related metabolic pathways or processes.
+
+6. **Quality Control (QC)**:
+   - If QC samples (samples that are representative of the entire batch and are repeatedly measured throughout the run) are included in the experiment, assess the reproducibility and stability of the measurements. This can be done by visualizing the clustering of QC samples in multivariate plots or by monitoring specific metabolites' intensities across all QC samples.
+
+7. **Feature Selection**:
+   - If the dataset is large with many metabolites, consider methods to select the most informative features for subsequent analyses. This can be based on variance, correlation with the outcome, or other criteria.
+
+8. **Initial Biomarker Discovery**:
+   - Even in the EDA phase, one can perform simple univariate statistical tests (e.g., t-tests, ANOVA) to identify metabolites that differ significantly between groups or conditions.
+
+9. **Data Annotation**:
+   - For identified features of interest, consult metabolomics databases to annotate and identify the corresponding metabolites, if not already done.
+
+10. **Report Generation**:
+   - Summarize the findings, visualizations, and initial insights in a report. This will serve as a foundation for more in-depth analyses and hypothesis testing.
+
+The goal of EDA is to understand the data's structure, identify any anomalies or outliers, and generate hypotheses for further analysis. It's a critical step to ensure the quality and reliability of subsequent statistical analyses and biological interpretations.
 
 ## Workshops, Courses, and Tutorials
 - [Metabolomics Society Training](https://metabolomicssociety.org/training)
