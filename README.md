@@ -209,6 +209,51 @@ Once these processing steps are completed, the data are ready for downstream sta
     </center>
 </p>
 
+
+### Peak Detection (Peak Picking)
+
+Peak picking is a critical step in the analysis of mass spectrometry (MS) and nuclear magnetic resonance (NMR) data. It involves the identification and quantification of peaks, which represent specific analytes (like metabolites in metabolomics studies). Several approaches have been developed for peak picking, each with its advantages and challenges. 
+
+**Some of the common approaches:**
+
+1. **Threshold-Based**:
+   - This is the simplest method where peaks are identified based on an intensity threshold. Any signal above this threshold is considered a peak.
+   - The threshold can be set manually based on visual inspection or determined automatically using various algorithms.
+
+2. **Derivative-Based**:
+   - Peaks can be identified by looking at the first or second derivative of the intensity profile.
+   - Zero-crossings in the first derivative or points where the second derivative changes sign can indicate peak positions.
+   - This method can help distinguish real peaks from noise but may be sensitive to baseline variations.
+
+3. **Wavelet Transform**:
+   - Wavelet transform allows the decomposition of a signal into different frequency components.
+   - This method can be particularly useful for noisy data or when peaks are closely spaced, making them hard to distinguish using simpler methods.
+   - Tools like `CWT` (Continuous Wavelet Transform) can be used for peak detection in this approach.
+
+4. **Model-Based**:
+   - Peaks are modeled using predefined shapes, often Gaussian or Lorentzian.
+   - The data is then fitted to these models, and peaks are identified based on the fit.
+   - This approach can provide accurate peak shapes and positions but may be computationally intensive.
+
+5. **Deconvolution**:
+   - This method aims to separate overlapping peaks by deconvolving the observed spectrum.
+   - It's particularly useful when multiple compounds produce peaks at similar m/z values, leading to overlapping signals.
+   - Algorithms like the Maximum Entropy Method (MEM) can be used for deconvolution.
+
+6. **Machine Learning**:
+   - With the rise of machine learning, algorithms have been developed to identify peaks using trained models.
+   - These models can be trained on labeled data to recognize and distinguish real peaks from noise or artifacts.
+   - Deep learning, especially convolutional neural networks (CNNs), has shown promise in this area.
+
+7. **Matched Filtering**:
+   - This method involves convolving the data with a known peak shape (or a set of shapes).
+   - The convolution result can highlight positions in the data that match the expected peak shape, aiding in peak detection.
+
+8. **Data-Adaptive Methods**:
+   - These methods adjust parameters based on the characteristics of the data.
+   - For instance, local noise estimation can be used to set adaptive thresholds for peak picking in different regions of a spectrum.
+
+When choosing a peak picking method, it's essential to consider the nature of the data (e.g., the level of noise, the expected number of peaks, peak shapes) and the specific requirements of the study. Often, a combination of methods or iterative approaches is employed to ensure accurate and comprehensive peak detection.
 ## Exploratory Data Analysis (EDA) for metabolomics data
 Exploratory Data Analysis (EDA) is a crucial step in metabolomics research, as it allows researchers to understand the structure, patterns, and potential outliers in their data before diving into more complex analyses. 
 
